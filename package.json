@@ -1,11 +1,11 @@
 {
-  "name": "Some module",
+  "name": "collections",
   "version": "0.0.1",
-  "description": "Some module description",
-  "main": "index.js",
-  "types": "types.d.ts",
+  "description": "Data structures in JavaScript",
+  "main": "collections,js",
+  "types": "collections.d.ts",
   "engines": {
-    "node": "18 || 20 || 21"
+    "node": "16 || 18 || 20 || 22"
   },
   "readmeFilename": "README.md",
   "scripts": {
@@ -14,14 +14,25 @@
     "lint": "eslint . && prettier --check \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\" \"**/*.ts\"",
     "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\" \"**/*.ts\""
   },
-  "keywords": [],
+  "keywords": [
+    "data structures",
+    "collections",
+    "queue",
+    "deque",
+    "stack",
+    "heap",
+    "hash table",
+    "linked list",
+    "graph",
+    "tree"
+  ],
   "author": "Timur Sevimli <svmlitimur@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timursevimli/someModule/issues",
+    "url": "https://github.com/timursevimli/collections/issues",
     "email": "svmlitimur+github@gmail.com"
   },
-  "homepage": "https://github.com/timursevimli/someModule#readme",
+  "homepage": "https://github.com/timursevimli/collections#readme",
   "devDependencies": {
     "eslint": "^8.57.0",
     "prettier": "^3.3.2",
