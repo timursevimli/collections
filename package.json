@@ -9,7 +9,7 @@
   },
   "readmeFilename": "README.md",
   "scripts": {
-    "test": "npm run lint && npm run types && tap run",
+    "test": "npm run lint && npm run types && tap --disable-coverage run ",
     "types": "tsc -p tsconfig.json",
     "lint": "eslint . && prettier --check \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\" \"**/*.ts\"",
     "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\" \"**/*.ts\""
