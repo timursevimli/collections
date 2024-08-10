@@ -2,7 +2,7 @@
   "name": "collections",
   "version": "0.0.1",
   "description": "Data structures in JavaScript",
-  "main": "collections,js",
+  "main": "collections.js",
   "types": "collections.d.ts",
   "engines": {
     "node": "16 || 18 || 20 || 22"
