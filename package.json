@@ -1,5 +1,5 @@
 {
-  "name": "collections",
+  "name": "@tsevimli/collections",
   "version": "0.0.1",
   "description": "Data structures in JavaScript",
   "main": "collections.js",
