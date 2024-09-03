@@ -3,7 +3,7 @@
 const { test, plan } = require('tap');
 const { LinkedList } = require('../collections.js');
 
-plan(10);
+plan(11);
 
 test('LinkedList initialization', (t) => {
   t.plan(3);
@@ -129,4 +129,14 @@ test('LinkedList toString', (t) => {
   list = new LinkedList([1, 2, 3]);
 
   t.equal(list.toString(), '1,2,3');
+});
+
+test('LinkedList to toArray', (t) => {
+  t.plan(2);
+
+  const list = new LinkedList([1, 2, 3]);
+  const array = list.toArray();
+
+  t.equal(array.length, 3);
+  t.same(array, [1, 2, 3]);
 });
