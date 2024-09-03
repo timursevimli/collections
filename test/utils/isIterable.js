@@ -1,7 +1,7 @@
 'use strict';
 
 const { test, plan } = require('tap');
-const { isIterable } = require('../lib/utils.js');
+const { isIterable } = require('../../lib/utils.js');
 
 plan(4);
 
