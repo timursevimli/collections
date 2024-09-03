@@ -134,9 +134,9 @@ test('LinkedList toString', (t) => {
 test('LinkedList to toArray', (t) => {
   t.plan(2);
 
-  const list = new LinkedList([1, 2, 3]);
+  const list = new LinkedList([1, 2, null, 4, undefined, {}]);
   const array = list.toArray();
 
-  t.equal(array.length, 3);
-  t.same(array, [1, 2, 3]);
+  t.equal(array.length, 6);
+  t.same(array, [1, 2, null, 4, undefined, {}]);
 });
