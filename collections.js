@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-  ...require('./lib/linkedlist.js'),
+  LinkedList: require('./lib/linkedlist.js'),
+  FixedQueue: require('./lib/fixedQueue.js'),
 };
