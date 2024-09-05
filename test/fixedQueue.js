@@ -59,7 +59,6 @@ test('shift method (small queue)', (t) => {
 
 test('shift method (large queue)', (t) => {
   const MAX = 3_000;
-  t.plan(MAX);
 
   const queue = new FixedQueue();
 
@@ -68,8 +67,12 @@ test('shift method (large queue)', (t) => {
   }
 
   for (let i = 0; i < MAX; i++) {
-    t.equal(queue.shift(), i);
+    if (queue.shift() !== i) {
+      t.fail();
+      break;
+    }
   }
+  t.end();
 });
 
 test('sort method (small queue)', (t) => {
