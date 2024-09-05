@@ -27,14 +27,22 @@ test('push method (small queue)', (t) => {
 });
 
 test('push method (large queue)', (t) => {
-  t.plan(1);
+  t.plan(2);
 
   const MAX = 3_000;
 
+  const expected = new Array(MAX).fill(undefined);
   const queue = new FixedQueue();
 
   for (let i = 0; i < MAX; i++) {
     queue.push(i);
+    expected[i] = i;
+  }
+
+  t.equal(queue.length, MAX);
+  t.same([...queue], expected);
+});
+
 test('unshift method (small queue)', (t) => {
   t.plan(6);
 
