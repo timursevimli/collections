@@ -14,7 +14,7 @@ test('FixedQueue initialization', (t) => {
   t.equal(queue instanceof FixedQueue, true);
 });
 
-test('Push method (small queue)', (t) => {
+test('push method (small queue)', (t) => {
   t.plan(1);
 
   const queue = new FixedQueue();
@@ -26,7 +26,7 @@ test('Push method (small queue)', (t) => {
   t.equal(queue.length, 3);
 });
 
-test('Push method (large queue)', (t) => {
+test('push method (large queue)', (t) => {
   t.plan(1);
 
   const MAX = 3_000;
@@ -40,7 +40,7 @@ test('Push method (large queue)', (t) => {
   t.equal(queue.length, MAX);
 });
 
-test('Shift method (small queue)', (t) => {
+test('shift method (small queue)', (t) => {
   t.plan(6);
 
   const queue = new FixedQueue();
@@ -57,7 +57,7 @@ test('Shift method (small queue)', (t) => {
   t.equal(queue.length, 0);
 });
 
-test('Shift method (large queue)', (t) => {
+test('shift method (large queue)', (t) => {
   const MAX = 3_000;
   t.plan(MAX);
 
@@ -72,7 +72,7 @@ test('Shift method (large queue)', (t) => {
   }
 });
 
-test('Sort method (small queue)', (t) => {
+test('sort method (small queue)', (t) => {
   t.plan(4);
 
   const queue = new FixedQueue();
@@ -89,7 +89,7 @@ test('Sort method (small queue)', (t) => {
   t.equal(queue, sortedQueue);
 });
 
-test('Sort method (large queue)', (t) => {
+test('sort method (large queue)', (t) => {
   t.plan(1);
 
   const MAX = 3_000;
@@ -135,7 +135,7 @@ test('Iterable (large queue)', (t) => {
   t.same(result, expected);
 });
 
-test('Every method', (t) => {
+test('every method', (t) => {
   t.plan(2);
 
   const queue = new FixedQueue();
@@ -153,7 +153,7 @@ test('Every method', (t) => {
   );
 });
 
-test('Find method', (t) => {
+test('find method', (t) => {
   t.plan(2);
 
   const queue = new FixedQueue();
