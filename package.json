@@ -1,11 +1,11 @@
 {
   "name": "@tsevimli/collections",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Data structures in JavaScript",
   "main": "collections.js",
   "types": "collections.d.ts",
   "engines": {
-    "node": "16 || 18 || 20 || 22"
+    "node": "16 || 18 || 20 || 22 || 24"
   },
   "readmeFilename": "README.md",
   "scripts": {
